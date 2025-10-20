@@ -16,7 +16,7 @@ public class MainKitchen {
         for (String vegetable : vegetables) {
             System.out.println("Chef: chopping " + vegetable + "...");
             try {
-                Thread.sleep(500);
+                Thread.sleep(2000);
             }catch(InterruptedException e){
                 System.out.println("The helper was interrupted" + e.getMessage() );
             }
