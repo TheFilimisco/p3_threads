@@ -1,14 +1,9 @@
-package exercise2;
+package exercise4;
 
-public class Mouse extends Thread {
+public class Mouse implements Runnable{
     private String name;
     public Mouse(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void run() {
-        this.eat();
     }
 
     public void eat() {
@@ -16,5 +11,10 @@ public class Mouse extends Thread {
         System.out.println("The mouse " + name + " is eating");
         System.out.println("The mouse " + name + " has ate");
 
+    }
+
+    @Override
+    public void run() {
+        this.eat();
     }
 }
