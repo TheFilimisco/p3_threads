@@ -1,18 +1,10 @@
-public class Mouse extends Thread {
+package exercise2;
 
+public class Mouse {
     private String name;
-
     public Mouse(String name) {
         this.name = name;
     }
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
 
     public void eat() {
         System.out.println("The mouse " + name + " has started to eat");
@@ -20,10 +12,4 @@ public class Mouse extends Thread {
         System.out.println("The mouse " + name + " has ate");
 
     }
-
-    @Override
-    public void run() {
-        this.eat();
-    }
-
 }
