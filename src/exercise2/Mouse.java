@@ -6,15 +6,17 @@ public class Mouse extends Thread {
         this.name = name;
     }
 
-    @Override
-    public void run() {
-        this.eat();
-    }
-
     public void eat() {
         System.out.println("The mouse " + name + " has started to eat");
         System.out.println("The mouse " + name + " is eating");
         System.out.println("The mouse " + name + " has ate");
 
     }
+
+    @Override
+    public void run() {
+        this.eat();
+    }
+
+
 }
